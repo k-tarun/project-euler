@@ -1,10 +1,10 @@
 var solution = function(input){
     input -= 1;
     var sum = 0;
-    var multiples15 = input / 15;
-    var multiples = Math.floor(multiples15 * 5);
+    var multiples15 = input / 15; 
+    var multiples = Math.floor(multiples15 * 5); // number of 3 multiples
     sum += (multiples * (multiples + 1)) * 3 / 2;
-    var multiples = Math.floor(multiples15 * 3);
+    var multiples = Math.floor(multiples15 * 3); // number of 5 multiples
     sum += (multiples * (multiples + 1)) * 5 / 2;
     var multiples = Math.floor(multiples15); // number of 15 multiples
     sum -= (multiples * (multiples + 1)) * 15 / 2;
